@@ -1,0 +1,445 @@
+/* Remove arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*  */
+
+/* disabled text */
+
+input[type=number]:disabled {
+    background:white;
+    font-family: "inter", sans-serif;
+    color: #000;
+    
+  }
+
+/*  */
+
+input:focus {
+    outline: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    font-family: "Inter", "sans-serif";
+
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+
+}
+
+h3{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+div {
+    text-align: center;
+    border-color: black;
+}
+
+p {
+    margin: auto; 
+    text-align: left;
+    padding-top: 10px; 
+    padding-bottom: 20px;
+    text-decoration: underline;
+    user-select: none;
+    width: 343px;
+    height: 2.5rem; 
+    font-family: "inter", sans-serif;
+}
+
+
+p#author-credits {
+    text-decoration: none; 
+    padding: 0px;
+    text-align: center;
+}
+
+
+
+p:hover {
+    cursor: pointer;
+}
+
+p#taskCounter {
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    margin: auto;
+    padding: 5px;
+    text-align: left;
+    border: 0px solid #f6f9fc;
+    border-radius: 4px ;
+    font-size: 20px;
+   text-decoration: none;
+    width: 355px;
+    height: 1.5rem; 
+    font-family: 'Inter', 'sans-serif';
+    color: #3c4257;
+}
+
+/* Classes */
+
+.button {
+    text-decoration: none;
+    padding: 20px 50px;
+    position: relative;
+    margin: 30px;
+}
+
+.footer-credits {
+    padding: 10px;
+    
+}
+
+
+
+
+.footer-theme {
+    padding: 10px;
+}
+
+.timeStamp {
+    margin: auto;
+    padding: 1px;
+    text-align: center;
+    border: 0px ;
+    font-size: 80px;
+
+
+    /* -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+         border-radius: 4px;
+
+
+ /* make it glow! */
+ /* -webkit-box-shadow: 0px 0px 4px #3c4257;
+    -moz-box-shadow: 0px 0px 4px #3c4257;
+         box-shadow: 0px 0px 4px #3c4257;  */ 
+};
+
+
+
+
+/* Ids */
+
+
+
+
+
+#buttons {
+    margin: auto;
+    padding-top: 10px;
+    ;
+
+
+}
+
+#container {
+    width: 100%;
+    max-width: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+
+}
+
+/* cancel button  */
+
+#cancel {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#cancel::after, #cancel::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: rgb(0, 0, 0);
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: translate(12px, 12px);
+}
+
+#cancel:hover {
+    transform: translate(12px, 12px);
+}
+
+#cancel:hover::after {
+    transform: translate(0px, 0px);
+}
+
+#cancel:hover::before {
+    transform: translate(0px, 0px);
+}
+
+/*  */
+
+/* new To do list items */
+
+#newToDo{
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #f6f9fc;
+    border-radius: 4px ;
+    font-size: 20px;
+
+    width: fit-content;
+    height: fit-content; 
+    font-family: 'Inter', 'sans-serif';
+    color: #3c4257;
+}
+
+
+/*  */
+
+/* pause button */
+
+#pause {
+    font-family: 'Inter', sans-serif;
+    background: #000;
+    color: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+#pause::after, #pause::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #000;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: translate(12px, 12px);
+}
+
+#pause:hover {
+    transform: translate(12px, 12px);
+}
+
+#pause:hover::after {
+    transform: translate(0px, 0px);
+}
+
+#pause:hover::before {
+    transform: translate(0px, 0px);
+}
+
+/*  */
+
+/* start Button */
+
+#start {
+    
+    font-family: 'Inter', sans-serif;
+    background: #000;
+    color: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    /* transform: translate(-12px, -12px); */
+}
+
+#start::after, #start::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #000;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: translate(12px, 12px);
+}
+
+#start:hover {
+    transform: translate(12px, 12px);
+}
+
+#start:hover::after {
+    transform: translate(0px, 0px);
+}
+
+#start:hover::before {
+    transform: translate(0px, 0px);
+}
+
+/*  */
+
+#second-half-title{
+    padding-bottom: 25px;
+}
+
+#sun {
+    width: 50px;
+    height: 49px;
+    border: 0px solid black; 
+    border-radius: 15px;
+}
+
+#sun:hover {
+    transform: translate(0px, 20px);
+
+}
+
+#task-Counter {
+    margin: auto;
+    
+}
+
+#task_half {
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 500px;
+    background-color: #f6f9fc;
+    height: 100%;
+    width: 100%;
+    
+}
+
+/* taskbar inputs */
+
+#text-input{
+    margin: auto;
+    padding: 10px;
+    padding-bottom: .5px;
+    text-align: left;
+    border: 2px solid #fff;
+    border-radius: 4px ;
+    font-size: 20px;
+    width: 17rem;
+    height: 2.5rem; 
+    font-family: 'Inter', 'sans-serif';
+    color: #3c4257;
+}
+
+
+
+#text-input:hover {
+    border-color: #002c59;
+
+}
+
+#text-input:focus {
+    border-color: #002c59;
+    
+}
+
+
+/*  */
+
+
+#timer {
+    padding: 5px;
+    padding-top: 100px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: auto;
+    box-sizing: border-box;
+    height: 300px;
+    width: 450px;
+    
+
+    
+}
+
+#timer_half {
+    
+}
+
+#title {
+    margin: auto;
+    padding-bottom: 25px;
+    padding-top: 20px;
+   
+}
+
+/* + button  */
+
+#toDoBtn {
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    border: 2px solid #f6f9fc;
+    border-radius: 4px ;
+    font-size: 2rem;
+    width: 4rem;
+    height:3.4rem; 
+    font-family: 'Inter', 'sans-serif';
+    color: #002c59;;
+    background-color: #f6f9fc ;
+}
+
+#toDoBtn:hover {
+    border-color: #002c59;;
+    background-color: #002c59;;
+    color: #fff;
+}
+
+/*  */
+
+#hour {
+    font-family: "inter", sans-serif;
+}
+
+#min{
+    font-family: "inter", sans-serif;
+}
+
+#sec{
+    font-family: "inter", sans-serif;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0500bb166.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id = "timer_half">
+    <div id = 'title'>
+        <h1>getShitDone</h1>
+       
+    </div>
+    
+
+   <div id = "container">
+        <div id = "timer">
+            <input id = "hour" type="number" max = "99" min = "0" value = "00" class = "timeStamp"> <input id = "min" type="number" max = "59" min = "0" value = "20" class = "timeStamp"> <input id = "sec" type="number" max = "99" min = "0" value = "00" class = "timeStamp">  
+        </div>
+
+        <div id = "buttons">
+            <button id = "start" class = "button">Start</button>
+            <button id = "pause" class = "button" >Pause</button>
+            <button id = "cancel" class = "button">Cancel</button>
+        </div>
+            
+     
+    </div>
+</div>
+
+    <div id ="task_half">
+    <div id = "second-half-title">
+        <h2>To-do</h2>
+    </div>
+    
+
+    <div>
+        <div id = 'task-Counter'>
+        <p id = "taskCounter">0</p>
+     </div >
+    <div id = "to-do-holder">
+         <input type="text" id = 'text-input' onkeydown="submitTask(this)">
+         <button id="toDoBtn">+</button>
+        
+         <div id = "text-and-btn">
+            <div class = 'to-do' id = 'newToDo'>
+
+            </div>
+         </div>
+    </div>
+        
+    </div>
+    </div>
+
+
+    <div id = "instructions-half">
+
+
+    </div>
+
+    <div class = "footer">
+        <div class = "footer-links"> 
+            
+            <a href = ""> Contact </a>
+            <a href = ""> Extension </a>
+            <!-- make a chrome extension link -->
+        </div>
+        <div class = "footer-socials">
+            <!-- twitter
+            
+            
+            github  -->
+            <a href = "https://twitter.com/kesdlvi"> <img src="/icons/icons8-twitter-60.png" alt="twitter"> </a>
+            <a href = "https://github.com/kesdlvi"> <img src="/icons/icons8-github-60.png" alt="github">  </a> 
+        </div>
+        <div class = "footer-credits">
+            <p id = 'author-credits'>Curated by Kevin Espinas</p>
+        </div>
+       <div class = "footer-rights" >
+
+
+        
+       </div>
+
+       <div class = "footer-theme">
+        <img src="icons/sun_2600-fe0f.png" alt = "sun" id = "sun">
+       </div>
+
+    </div> 
+    <script src = "timer.js"></script>
+</body>
+</html>
